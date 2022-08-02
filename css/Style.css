@@ -16,14 +16,6 @@ body {
     text-align:center
 }
 
-/*.navbar-brand{
-    display: inline-block;
-    vertical-align: top;
-    z-index: 1031231;
-    position: relative;
-    top: -23px;
-}   **/
-
 
 .masterplan img{
     height: 500px;
@@ -203,7 +195,7 @@ grid-area: imagen4;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 40fr 40fr;
     grid-template-areas: "imagen1 imagen2 texto1" "imagen3 imagen4 texto1";
-    padding: 10px;
+    /*padding: 10px;*/
     width: auto;
     height: auto;
     
