@@ -16,57 +16,14 @@ body {
     text-align:center
 }
 
-.menu{
-    display: flex;
-    background-color: rgba(9, 81, 59, 0.9);
-    height: 75px;
-    width:100vw;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo-frente{ 
-    /*color: #666666;
-    font-weight: bold;
-    height: 80px;
-    width:100vw;
-    margin-right: 30px;*/
+/*.navbar-brand{
     display: inline-block;
     vertical-align: top;
     z-index: 1031231;
     position: relative;
-    top: 30px;
-  }  
-.menuItem{
-   display: flex;
-   list-style: none;
-   margin-right: 150px;
-   
+    top: -23px;
+}   **/
 
-}  
-.menuItem li{
-    border-radius: 3px;
-    margin: 0 5px;
-}
-
-.menuItem li a{
-    padding: 7px 13px;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-    text-transform: uppercase;
-    color: #000000;
-}
-.menuItem li:hover{
-    background-color: rgba(0, 0, 0, 0.3);
-    transition: .4s;
-}
-.menuLogo{
-    margin-right: 30px;
-    font-size: 25px;
-    cursor: pointer;
-    display: none;
-    
-}
 
 .masterplan img{
     height: 500px;
@@ -76,8 +33,6 @@ body {
 .imagenprincipal{
     display: flex;
     justify-content: space-between;
-    
-   
     width: 100%;
     }
 
@@ -201,7 +156,7 @@ li{
     font-size: 14px;
 }
 
-}
+
 .imagen1{
 grid-area: imagen1;
 width: 100px ;
@@ -263,6 +218,7 @@ grid-area: imagen4;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    color: #E8EADA;
     
  }
      /*BARRIO*/

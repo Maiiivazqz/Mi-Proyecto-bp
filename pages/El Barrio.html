@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <title>El Barrio </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="js/wow.min.js"></script> 
@@ -13,27 +14,74 @@
     <link rel="shortcut icon" href="../media/LOGO1.jpg">
     <link rel="stylesheet" href="../css/Style.css">
 </head>
+
 <body>
-  <nav class="menu">
-    <a class="logo-frente" href="../index.html">
-    <img src="../media/LOGO1.jpg" alt="logo"></a>
-      
-          <ul class="menuItem">
-              <li><a href="../pages/El Barrio.html">El Barrio</a></li>
-              <li><a href="../pages/Masterplan.html">Masterplan</a></li>
-              <li><a href="../pages/Contacto.html">Contacto</a></li>
-              <li><a href="../pages/Propietarios.html">Socios</a></li>
-             
-          </ul>
-     <i id="menuLogo" class="menuLogo"></i>
-  </nav> 
-    <main class="galeria2">
+  <nav class="navbar navbar-expand-lg" style="background-color: rgba(9, 81, 59, 0.9)";>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../media/LOGO1.jpg" alt="logo" width="150px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="../pages/El Barrio.html">El Barrio</a>
+          <a class="nav-link" href="../pages/Masterplan.html">Masterplan</a>
+          <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
+          <a class="nav-link" href="../pages/Propietarios.html">Socios</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="../media/house2.jpg" class="card-img-top" alt="House">
+          <div class="card-body">
+            <h5 class="card-title">Amenities</h5>
+            <p class="card-text">Barrio Brisas de Valdevez – Lotes con entrega inmediata. Todos los servicios subterraneos y amenities: 5 canchas de Tennis (3 polvo de ladrillo, 2 rápidas). Canchas de fútbol 11, Jockey y Voley. Club House con pileta para adultos y niños. 
+              Vení a conocerlo</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../media/depto_B_out.jpg" class="card-img-top" alt="departamento">
+          <div class="card-body">
+            <h5 class="card-title">Condominios</h5>
+            <p class="card-text">Brisas de Valdevez cuenta con un sector de Condominios, Altos de Valdevez, que ofrece la comodidad de vivir en un departamento disfrutando de todas las ventajas de un barrio privado. 
+              Vení a conocerlo</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../media/foto2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Zona de Conford</h5>
+            <p class="card-text">Cuando pensamos en descansar y relajarnos la alternativa preferida por casi todos es la misma: una playa de aguas cristalinas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../media/playa.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Playa Artificial</h5>
+            <p class="card-text">Poder vivir a sólo metros de una playa de aguas cristalinas pero sin tener que abandonarlo todo. Es más, este emprendimiento le propone al propietario unir todo lo bueno, sin tener que abandonar nada.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+  <!--<main class="galeria2">
         <h1 class="wow animate__animated animate__fadeIn">Acerca del Barrio</h1>
           <br>
         <div class="galeria1">
             <div class="c1 verdecrema"></div>
-
-     
              <div class="w105">
                <h4>Amenities</h4> 
                <br>
@@ -59,11 +107,9 @@
                <img src="../media/playa.jpg" alt=""height="auto" width="60%">
                <p>Poder vivir a sólo metros de una playa de aguas cristalinas pero sin tener que abandonarlo todo. Es más, este emprendimiento le propone al propietario unir todo lo bueno, sin tener que abandonar nada.</p> </div> 
         
-        </div>
-    </main>
-        <br>
-        <br>
-    
+        </div> 
+      </main>-->
+      
     <section>
         <div class="titulo2">
         <H4>VIVI TRANQUILO, VIVI EN BRISAS</H4></div>
@@ -85,6 +131,6 @@
               <div>
         </div> 
     </footer>
-
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
