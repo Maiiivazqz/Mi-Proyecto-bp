@@ -18,8 +18,9 @@ body {
 
 
 .masterplan img{
-    height: 500px;
-    width: 650px;
+   
+    width: 100%;
+    
 }
 
 .imagenprincipal{
@@ -28,52 +29,11 @@ body {
     width: 100%;
     }
 
-/*.padre-flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    height: 20px;
-    background-color: rgba(9, 81, 59, 0.9);
-    padding: auto;*/
 h1{
     text-align: center;
-    color: #556b2f;
+    color:beige;
+    font-size: 15px;
     }
-          
-    
-
-.footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 50px;
-    background-color: rgba(9, 81, 59, 0.9);
-    position: relative;
-    width: 100%;
-    border-top: 6px solid #304D32;
-    border-bottom: 25px solid #304D32;
-    padding: 15px 0;
-    background: #707545;
-    color: #E8EADA;
-    font: 10pt/12pt 'GothamRounded-Book', 'Montserrat', sans-serif;
-}
-.w960 {
-    position: relative;
-    width: 97%;
-    margin: auto;
-    max-width: 960px;
-    
-}
-.w100{
-    position: relative;
-    width: 97%;
-    margin: auto;
-}
-.iconos{
-    grid-area: footer;
-    display: flex;
-    justify-content: end;
-}
 .contacto{
     display: flex;
     background-color: beige;
@@ -122,44 +82,14 @@ h2{
      opacity: 1;  
     }
 }
-
-.cambiarColor{
-    color: #556b2f;
-}
-ul{
-    list-style-type: none;
-}
-
-body{
-    background-color: rgb(215, 223, 215);
-
-        min-height: 100%;
-        font-size: 1.2rem; 
-}
-
-ul{
-    list-style: none;
-    font-size:0 ;
-}
-li{
-    display: inline-block;
-    width: 25%;
-    position: relative;
-    font-size: 14px;
-}
-
-
+/*INDEX*/
 .imagen1{
 grid-area: imagen1;
-width: 100px ;
-height: 100px;*
-
 
 }
 .imagen2{
 grid-area: imagen2;
-width: 500px ;
-height: 500px;
+
 
 }
 .imagen3{
@@ -173,16 +103,9 @@ grid-area: imagen4;
 
 }
 
-  
-.texto1{
-    grid-area: texto1;
-    justify-self: end;
-    align-self: center;
- 
-}
 .imagen img{
-    width: 250px ;
-    height: 250px;
+    max-width:100% ;
+    max-height: 100%;
     grid-template-columns: 30px 30px;
     grid-template-rows: 30px 30px;
     column-gap: 5px;
@@ -195,11 +118,8 @@ grid-area: imagen4;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 40fr 40fr;
     grid-template-areas: "imagen1 imagen2 texto1" "imagen3 imagen4 texto1";
-    /*padding: 10px;*/
-    width: auto;
-    height: auto;
-    
-  
+    padding: 10px;
+    width: 100%;   
  }
    
  #flex2{
@@ -213,7 +133,7 @@ grid-area: imagen4;
     color: #E8EADA;
     
  }
-     /*BARRIO*/
+     /*EL BARRIO*/
 .galeria1{
     display: flex;
     flex-direction: row;
@@ -221,6 +141,9 @@ grid-area: imagen4;
     justify-content: space-evenly;
     background-color: #ECECEC;
     align-items: stretch;
+}
+.sectionBoulevard{
+    background-color:#b5c6b3dd;
 }
 .titulo2{
     position: relative;
@@ -230,14 +153,64 @@ grid-area: imagen4;
     margin-bottom: 5px
 
 }
-.w105 #w106 #w107 #w108{
+.texto1{
+    grid-area: texto1;
+    justify-self: end;
+    align-self: center;
+}
+
+  /*FOOTER*/
+ .footer{
     display: flex;
+    width: 100%;
+    background-color: #304D32;
+    color: beige;
+   margin: auto;
+
+ }
+ .grupo1{
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    font: 12pt/17pt 'GothamRounded-Book', 'Montserrat', sans-serif;
-    padding: 20px 0;
-    height: 200px;
+    justify-content: left;
+   /* max-width: 1000px;*/
+    margin: auto;
+ }
+ .grupo1 h1{
+    font-size: 15px;
+    color: beige;
+ }
+.grupo1 p{
+    font-size: 14px;
+    color: beige;
+    margin-top: 20px;
+}
+
+
+.red-social{
+   
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 20px;
+    /*max-width: 400px;*/
+}
+.red-social h1{
+    font-size: 22px;
+    color: beige;
+    justify-content: flex-start;
+}
+.row{
+    margin-top: 10px;
+   
+}
+.row .img{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.row img:hover{
+    background-color: #666666;
+  
 }
 
 

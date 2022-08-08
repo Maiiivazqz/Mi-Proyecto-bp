@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <title>Socios</title>
-    <link rel="shortcut icon" href="../media/LOGO1.jpg">
+    <link rel="shortcut icon" href="../media/icon feliz.png">
     <link rel="stylesheet" href="../css/Style.css">
 </head>
-<body>
+<body >
   <nav class="navbar navbar-expand-lg" style="background-color: rgba(9, 81, 59, 0.9)";>
     <div class="container-fluid">
       <a class="navbar-brand" href="../index.html">
@@ -29,48 +29,103 @@
     </div>
   </nav>
 
-      <h1>Propietarios</h1>
-     <aside>
-        <img  src="../media/HOUSE.jpg"  alt="house"  height="250px" width="250px">
-     </aside>
-  
-      
-    <main class="socios">
-          <form action="" method="GET" enctype="multipart/form-data">
-           <FIELDset>
-            <legend>INGRESO AL SISTEMA</legend>
-             <br>
-                <label for="nombre">Nombre y Apellido:</label>
-                <br>
-                <input type="text" name="nombre">
-                <br>
-                <br>
-                <label for="contrasena">Contaseña:</label>
-                <br>
-                <input type="password" name="contrasena">
-                <br>
-                <input type="submit" name="ingresar" value="Ingresar">
-          </FIELDset>
+  <main style=" background:linear-gradient( #a3d789, #b1a8a8)">
+    <div class="container-form w-75 mt-5" >
+      <div class="row" >
+        <div class="col d-none d-lg-block col-md-5 col-lg-5 col-xl-6" style="background-image: url(../media/HOUSE.jpg); background-size: auto;">
+        </div>
 
+        <div class="col p-5">
+          <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+          <!--login-->
+          <form action="#">
+           <div class="mb-4">
+            <label for="email" class="form-label">Correo Electronico</label>
+            <input type="email" class="form-control" name="email">
+           </div>
+           <div class="mb-4">
+           <label for="email" class="form-label">Contraseña</label>
+            <input type="email" class="form-control" name="Contraseña">
+           </div>
+           <div class="mb-4 form-check">
+            <input type="checkbox" name="connected" class="form-check-input">
+            <label for="connected" class="form-check-label">Mantenerme contectado</label>
+           </div>
+
+           <div class="d-grid">
+            <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+           </div>
+
+           <div class="my-3">
+            <span>No tienes cuenta? <a href="#">Registrate</a></span><br>
+            <span><a href="#">Recuperar Contraseña</a></span>
+           </div>
+          
           </form>
 
-        </main>
-      
-     
-        <FOOter class="footer"> 
-         <div id="footer" class>
-           <div class="w960">
-               <div class="w100">
-                   "BRISAS DE VALDEVEZ - Calle Falsa 123 - Zona Norte - Buenos Aires - Argentina"
-                   <Br>
-                 <div class="iconos">  
-                  <img src="../media/facebook.png" alt="facebook">
-                  <img src="../media/sobre.png" alt="Contacto">
-                  <img src="../media/tel.png" alt="numero">
+          <!--Login redes sociales-->
+          <div class="container w-100 my-5">
+            <div class="row">
+              <div class="col-12"></div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button class="btn btn-outline-primary w-100 my-1">
+                  <div class="row align-items-center">
+                    <div class="col-2 d-none d-md-block">
+                      <img src="../media/facebook.png" width="32" alt="Facebook">
+                    </div>
+
+                    <div class="col-12 col-md-10 text-center">
+                      Facebook
+                    </div>
+                  </div>
+                </button>
+              </div>
+             <div class="col">
+              <button class="btn btn-outline-danger w-100 my-1">
+                <div class="row align-items-center">
+                  <div class="col-2 d-none d-md-block">
+                    <img src="../media/icon google.png" width="32" alt="Facebook">
+                  </div>
+                  <div class="col-12 col-md-10 text-center">
+                    Google
+                  </div>
                 </div>
-               <div>
-         </div> 
-     </footer>
+              </button>
+             </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="grupo1">
+         <h1>"BRISAS DE VALDEVEZ - Calle Falsa 123 - Buenos Aires - Argentina"</h1>
+    </div>
+    <div class="red-social">           
+        <div class="row">
+          <a href="https:/facebook/MariinaVazquez">
+           <img  src="../media/facebook.png" alt="facebook" height="40px" width="40px">
+          </a>
+        </div>
+        <div class="row">
+          <a href="https://www.instagram.com/mariinavazz/">
+            <img  src="../media/icon instagram.jpg" alt="Instagram" height="40px" width="40px">
+          </a>
+        </div>
+        <div class="row">
+          <a href="https://github.com/Maiiivazqz/Mi-Proyecto-bp" >
+            <img src="../media/icon github.png" alt="Github" height="40px" width="40px">
+          </a>
+        </div>
+        <div class="row">
+          <a href="https://www.linkedin.com/in/marina-alejandra-vazquez-9b13881b9">
+          <img src="../media/icon linkedin.png" alt="Linkedin" height="40px" width="40px">
+          </a>
+        </div>
+    </div>
+  </footter>
      <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
