@@ -1,0 +1,47 @@
+
+@import "variables";
+
+/*ANIDACION*/
+ .grupo1{
+    flex-direction: row;
+    justify-content: left;
+    margin: auto;
+    h1{
+        font-size: 15px;
+        color: beige;
+        p{
+            font-size: 14px;
+            color: beige;
+            margin-top: 20px;
+        }
+    }
+  }
+ 
+ .red-social{
+    
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: space-around;
+     margin: 20px;
+     /*max-width: 400px;*/
+ }
+ .red-social h1{
+     font-size: 22px;
+     color: beige;
+     justify-content: flex-start;
+ }
+
+
+/*ANIDACION*/
+.row{
+    margin-top: 10px;
+    img{
+        margin-top: 10px;
+        margin-left: 20px;
+        font-size: 1.1rem;
+        transition: color .4s ease;
+        &:hover{
+            background-color: $colorPrincipal;
+        }  
+    }
+}
