@@ -11,11 +11,11 @@
     <link rel="shortcut icon" href="../media/icon feliz.png">
     <link rel="stylesheet" href="../css/Style.css">
 </head>
-<body>
+<body >
   <nav class="navbar navbar-expand-lg" style="background-color: rgba(9, 81, 59, 0.9)";>
     <div class="container-fluid">
       <a class="navbar-brand" href="../index.html">
-        <img src="../media/LOGO1.jpg" alt="logo" width="150px">
+        <img src="../media/LOGO1.jpg" alt="logo" width="100px">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,15 +25,12 @@
           <a class="nav-link active" aria-current="page" href="../pages/El Barrio.html">El Barrio</a>
           <a class="nav-link" href="../pages/Masterplan.html">Masterplan</a>
           <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
-          <a class="nav-link" href="../pages/Propietarios.html">Socios</a>
+          <a class="nav-link" href="../pages/Propietarios.html" target="_blank">Socios</a>
         </div>
       </div>
     </div>
   </nav>
-
-    <h1>Contacto</h1>
-
-    <aside class="contacto">
+    <!--<aside class="contacto">
         <div>
             <img src="../media/HOUSE.jpg" alt="house" height="200px" width="200px"></div>
         <br>
@@ -61,8 +58,41 @@
             </fieldset>
         </form>
         </div>
+    </aside>-->
+
+    <aside class="contact">
+      <form  class="formContacto" action="">
+        <h2>CONTACTO</h2>
+        <input type="text" name="Nombre" placeholder="Nombre">
+        <input type="text" name="Correo" placeholder="Correo">
+        <input type="text" name="Telefono" placeholder="Telefono">
+        <label for="¿como nos conociste?">¿Como nos conociste?</label>
+        <select name="¿como nos conociste?" id="¿como nos conociste?">
+          <option value="Facebook">Facebook</option>
+          <option value="Revista">Revista</option>
+          <option value="Web">Web</option>
+          <option value="me lo recomendaron">me lo recomendaron</option>
+        </select>
+        <textarea name="Mensaje" placeholder="Escriba aqui su mensaje"></textarea>
+        <input type="button" value="Enviar" id="boton">
+
+        
+      </form>
+
+      <!--compartelo-->
+      <!--<div class="formContacto">
+        <p> Brisas está integrado por 312 lotes desarrollados sobre 45 hectáreas. Es un barrio destinado a la radicación de familias en forma permanente o para esparcimiento de fines de semana. Se trata de un espacio arbolado, apacible y seguro, sin contaminación ambiental y sensorial.</p>
+      </div>-->
+      <div >
+        <h4 class="containerButton"> Compartelo:</h4>
+       <div class="contenedor-botones">
+        <a href="#" class="button">facebook</a>
+        <a href="#" class="button">WhatsApp</a>
+        <a href="#" class="button">Email</a>
+       </div>
+    </div>
     </aside>
-    <footer class="footer"> 
+<footer class="footer"> 
 
       <div class="grupo1">
            <h1>"2022 © Barrio Brisas de Valdevez"</h1>

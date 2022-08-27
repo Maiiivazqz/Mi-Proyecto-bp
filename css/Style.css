@@ -3,13 +3,14 @@
   flex-direction: row;
   justify-content: left;
   margin: auto;
+  margin-top: auto;
 }
 .grupo1 h1 {
   font-size: 15px;
   color: beige;
 }
 .grupo1 h1 p {
-  font-size: 14px;
+  font-size: 12px;
   color: beige;
   margin-top: 20px;
 }
@@ -23,9 +24,9 @@
 }
 
 .red-social h1 {
-  font-size: 22px;
+  font-size: 20px;
   color: beige;
-  justify-content: flex-start;
+  justify-content: left;
 }
 
 /*ANIDACION*/
@@ -56,6 +57,10 @@ body {
   min-height: 100%;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-attachment: fixed;
 }
 
 .masterplan img {
@@ -215,52 +220,143 @@ h2 {
 .contenedor-botones {
   display: flex;
   flex-direction: row;
+  text-align: left;
+  font-size: 12px;
 }
 
-.boton, .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  width: 85px;
+.button {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 25px;
+  border: 2px solid #3c67e3;
+  border-radius: 10px;
+  width: 90px;
   height: 40px;
-  background-color: #85ab7d;
-  color: #ECECEC;
-  font-size: 10px;
+}
+
+.button:hover {
+  -webkit-animation: pulsate 1s ease-in-out;
+          animation: pulsate 1s ease-in-out; /*The pulsate animation is added on hover. You could also add this on .button:focus and it will add it when clicking the button as well.*/
+}
+
+@-webkit-keyframes pulsate {
+  /* 
+      Here we have two shadows. You can add as many as you want by using different offset values as long as you separate it with a comma.
+      The values are as follow: offset-x | offset-y | blur-radius | color
+  */
+  0% {
+    box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+  }
+}
+
+@keyframes pulsate {
+  /* 
+      Here we have two shadows. You can add as many as you want by using different offset values as long as you separate it with a comma.
+      The values are as follow: offset-x | offset-y | blur-radius | color
+  */
+  0% {
+    box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+  }
+}
+.adicional {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background: none;
   border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: 0.3s ease all;
-  border-radius: 5px;
+  padding: 12px 18px;
   position: relative;
-  overflow: hidden;
-  margin: 5px;
 }
 
-.boton::after, .btn::after {
+.cta:before {
   content: "";
-  width: 100%;
-  height: 100%;
-  background: #b0b0b0;
   position: absolute;
-  z-index: 1;
-  top: -80px;
-  left: 0;
-  transition: 0.3s ease-in-out all;
+  top: 50%;
+  transform: translateY(-50%) translateX(calc(100% + 4px));
+  width: 45px;
+  height: 45px;
+  background: #dc143c;
+  border-radius: 50px;
+  transition: transform 0.25s 0.25s cubic-bezier(0, 0, 0.5, 2), width 0.25s cubic-bezier(0, 0, 0.5, 2);
+  z-index: -1;
 }
 
-.boton span, .btn span {
-  position: relative;
-  z-index: 2;
-  transition: 0.3s ease all;
+.cta:hover::before {
+  width: 100%;
+  transform: translateY(-50%) translateX(-18px);
+  transition: transform 0.25s cubic-bezier(0, 0, 0.5, 2), width 0.25s 0.25s cubic-bezier(0, 0, 0.5, 2);
 }
 
-.boton:hover::after, .btn:hover::after {
-  top: 0;
+.cta i {
+  margin-left: 5px;
+  transition: transform 0.25s 0.4s cubic-bezier(0, 0, 0.5, 2);
+}
+
+.cta:hover i {
+  transform: translateX(3px);
+}
+
+/*CONTACTO*/
+.contact {
+  background-image: url(../media/Barriocompleto.jpg);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.formContacto {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+#boton {
+  background: #31384a;
+  color: #fff;
+  padding: 20px;
+}
+
+#boton:hover {
+  cursor: pointer;
 }
 
 /*MAPA*/
-.boton, .btn {
+.boton {
   background-color: #85ab7d;
 }
 
@@ -269,18 +365,19 @@ h2 {
 }
 
 /*EXTEND - MAP-GET*/
-.btn {
-  background-color: #85ab7d;
-}
-
-/*MIXIN*/
-.p {
-  text-decoration: underline;
-  -webkit-text-decoration-color: red;
-          text-decoration-color: red;
-  text-decoration-style: double;
-}
-
+/* .btn {
+   @extend .boton;
+   background-color: #85ab7d;
+ }
+ /*MIXIN*/
+/* @mixin subrayado($color, $style){
+    text-decoration: underline;
+    text-decoration-color: $color;
+    text-decoration-style: $style;
+ }
+ .p{
+   @include subrayado( red, double);
+ }*/
 /*FOOTER*/
 .footer {
   display: flex;
@@ -296,11 +393,26 @@ h2 {
     grid-template-rows: 40fr 40fr 40fr;
     grid-template-areas: "imagen1 imagen2" "imagen3 imagen4" "texto1 texto1";
   }
+  .adicional {
+    flex-direction: column;
+  }
+  .formContacto {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1000px) {
   .grid1 {
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 40fr 40fr;
     grid-template-areas: "imagen1 imagen2 texto1" "imagen3 imagen4 texto1";
+  }
+  .adicional {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  .formContacto {
+    width: 450px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -6,11 +6,12 @@
     flex-direction: row;
     justify-content: left;
     margin: auto;
+    margin-top: auto;
     h1{
         font-size: 15px;
         color: beige;
         p{
-            font-size: 14px;
+            font-size: 12px;
             color: beige;
             margin-top: 20px;
         }
@@ -26,9 +27,9 @@
      /*max-width: 400px;*/
  }
  .red-social h1{
-     font-size: 22px;
+     font-size: 20px;
      color: beige;
-     justify-content: flex-start;
+     justify-content: left;
  }
 
 
