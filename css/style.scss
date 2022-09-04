@@ -66,7 +66,7 @@
  }
  
  
- /*animacion*/
+ /*animacion - Index*/
  h2{
      text-align: center;
      color: #000000;
@@ -77,6 +77,7 @@
      animation-duration: 2s;
      animation-name: aparecer;
      animation-iteration-count: infinite;
+     color: #31384a;
  }
  @keyframes aparecer{
      0%{
@@ -177,7 +178,7 @@
   }
   .button{
     display: inline-block;
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 10px 25px;
     border: 2px solid 
@@ -203,7 +204,7 @@
         0 0 50px #4e00c2;
     }
 }
-
+/*INDEX - BOTONES*/
  .adicional{
     display: flex;
     flex-direction: row;
@@ -294,11 +295,26 @@ textarea{
     cursor: pointer;
 }
 
-  /*MAPA*/
+   /*FOOTER*/
+  .footer{
+     display: flex;
+     width: 100%;
+     background-color: $colorPrincipal;
+     color: beige;
+     margin: auto;
+     margin-top: auto;
+  }
+
+.card-img-top{
+    height: auto;
+    width: auto;
+
+}
+/*MAPA*/
  /* $contacto:(boton: #85ab7d);
 
   @each $red, $color in $contacto{
-    .#{$red}{
+    #{$red}{
         background-color: $color;
     }
   }
@@ -321,21 +337,13 @@ textarea{
     @include subrayado( red, double);
   }*/
 
-   /*FOOTER*/
-  .footer{
-     display: flex;
-     width: 100%;
-     background-color: $colorPrincipal;
-     color: beige;
-     margin: auto;
-     margin-top: auto;
-  }
 
  @media screen and (min-width: 320px){ 
-     .grid1{
-     grid-template-columns: 50% 50%;
-     grid-template-rows: 40fr 40fr 40fr;
-     grid-template-areas: "imagen1 imagen2" "imagen3 imagen4" "texto1 texto1";
+     .grid1{      
+     justify-content: center;
+     grid-template-columns: 50% ;
+     grid-template-rows: auto auto ;
+     grid-template-areas: "imagen1" "imagen3" "texto1";
     
      }
      .adicional{
@@ -347,8 +355,8 @@ textarea{
  
  }
  
- @media screen and (min-width: 1000px){
-     .grid1{
+ @media screen and (min-width: 992px){
+     .grid1{  
      grid-template-columns: 2fr 2fr 2fr;
      grid-template-rows: 40fr 40fr;
      grid-template-areas: "imagen1 imagen2 texto1" "imagen3 imagen4 texto1"; 
@@ -362,4 +370,24 @@ textarea{
   .formContacto{
     width: 450px;
   }
+
+ 
  }
+ @media screen and (min-width: 1200px){
+    .grid1{
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 40fr 40fr;
+    grid-template-areas: "imagen1 imagen2 texto1" "imagen3 imagen4 texto1"; 
+     grid-template-areas: "imagen1 imagen2 texto1" "imagen3 imagen4 texto1"; 
+    grid-template-areas: "imagen1 imagen2 texto1" "imagen3 imagen4 texto1"; 
+}
+.adicional{
+   display: flex;
+   flex-direction: row;
+   text-align: center;
+   justify-content: space-evenly;
+ }
+ .formContacto{
+   width: 450px;
+ }
+}
