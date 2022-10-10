@@ -20,4 +20,3 @@ while((dato != pass) && (intentos > 0)) {
     }
     dato = parseInt(prompt("cual es la contrasenia?"));
 }
-

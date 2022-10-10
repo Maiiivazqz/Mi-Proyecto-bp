@@ -25,6 +25,21 @@ class Propietario {
     }
 }
 
+let listaPropietarios = [];
+const agregarPropietario = () =>{
+    let nombre = prompt("cual es su nombre?");
+    let apellido = prompt("cual es su apellido?");
+    let pilar = prompt("cual es su vivienda");
+    let categoria = prompt("usted es propietario??");
+    let vehiculos = prompt("cuantos vehiculos tiene en su propiedad?");
+
+    let propietarioNuevo = new Propietario(nombre, apellido, pilar, categoria, vehiculos);
+
+    listaPropietarios.push(propietarioNuevo);
+
+}
+agregarPropietario();
+
 const oscar = new Propietario("oscar", "lodeiro",99, "propietario",4);
 const diego = new Propietario("Diego", "Santamaria",120, "inquilino",3);
 const juan = new Propietario("Juan", "Gomez",02, "propietario",5);
