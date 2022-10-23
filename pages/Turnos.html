@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservas</title>
+        <title>Reservas</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg" style="background-color: rgba(9, 81, 59, 0.9)";>
@@ -24,7 +24,7 @@
           </div>
         </div>
       </nav>
-    <form action="">
+    <form id="turnoFormulario">
             <h2>RESERVAS</h2>
             <input type="text" name="Nombre" placeholder="Nombre">
             <input type="text" name="Apellido" placeholder="Apellido">
@@ -34,10 +34,18 @@
                 <option value="Pilar">Pilar</option>
                 <option value="Departamento">Departamente</option>
               </select>
+            <select id="Lista">
+              <option> Tea House</option>
+              <option> Club House</option>
+              <option> Cancha de futbool</option>
+              <option> Cancha de tennis</option>
+              <option> Microcine</option>
+            </select>
               <input type="date" name="Calendario">
+            <button id="btn">Confirmar</button>
     </form>
 
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./turno.js"></script>
 </body>
 </html>

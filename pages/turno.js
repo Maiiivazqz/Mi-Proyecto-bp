@@ -6,13 +6,13 @@
 //  }
 
     //OBJETOS//
- const propietario1 = {
-     nombre:"Oscar", 
-     apellido:"Lodeiro",
-     pilar: 99,
-     categoria: "propietario",
-     vehiculo: 4,
- }
+const propietario1 = {
+        nombre:"Oscar", 
+        apellido:"Lodeiro",
+        pilar: 99,
+        categoria: "propietario",
+        vehiculo: 4,
+}
 console.log(propietario1);
 
 class Propietario {
@@ -44,7 +44,7 @@ const oscar = new Propietario("oscar", "lodeiro",99, "propietario",4);
 const diego = new Propietario("Diego", "Santamaria",120, "inquilino",3);
 const juan = new Propietario("Juan", "Gomez",02, "propietario",5);
 
- console.log(oscar);
+console.log(oscar);
 
 const crearPropietario = ()=>{
     let nombrePropietario = prompt("como se llama usted?");
@@ -54,8 +54,26 @@ const crearPropietario = ()=>{
     let vehiculoPropietario = prompt("cuantos vehiculos tiene en su propiedad?");
 
     const propietario = new Propietario(nombrePropietario, apellidoPropietario, pilarPropietario, categoriaPropietario, vehiculoPropietario);
-     console.log(propietario);
-     return propietario;
+    console.log(propietario);
+    return propietario;
     }
 
+const turnoFormulario = document.getElementById("turnoFormulario");
+
+
+turnoFormulario.addEventListener("submit", (e)=>{
+    evento.preventDefault();
+    console.log(e)
+})
+
+const boton = document.getElementById("btn");
+boton.addEventListener("click", ()=>{
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Su reserva a sido confirmada',
+        showConfirmButton: false,
+        timer: 1500
+    })
+}
 

@@ -8,15 +8,15 @@
 //    alert("si es inquilino ingrese su mail y contraseña")
 // } 
 
-let pass = 2022;
-let dato = parseInt(prompt("cual es la contrasenia?"));
-let intentos = 3;
+// let pass = 2022;
+// let dato = parseInt(prompt("cual es la contrasenia?"));
+// let intentos = 3;
 
-while((dato != pass) && (intentos > 0)) {
-    intentos--;
-    alert(`Contraseña Incorrecta. Le quedan ${intentos} intentos`);
-    if(intentos == 0){
-        break;
-    }
-    dato = parseInt(prompt("cual es la contrasenia?"));
-}
+// while((dato != pass) && (intentos > 0)) {
+//     intentos--;
+//     alert(`Contraseña Incorrecta. Le quedan ${intentos} intentos`);
+//     if(intentos == 0){
+//         break;
+//     }
+//     dato = parseInt(prompt("cual es la contrasenia?"));
+// }
